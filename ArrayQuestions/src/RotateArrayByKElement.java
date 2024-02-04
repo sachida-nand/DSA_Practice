@@ -1,0 +1,49 @@
+
+public class RotateArrayByKElement {
+	
+	public static void rotateElementByKth(int arr[], int k) {
+		
+		int n = arr.length; //n=5 
+		int r = arr.length - 1;
+		int startIndex = n - k; // 5 - 2 = 3
+		int start = 0;
+		int end = startIndex - 1;
+		
+		while (startIndex < r) {
+			int temp = arr[startIndex];
+			arr[startIndex] = arr[r];
+			arr[r] = temp;
+			r--;
+			startIndex++;
+		}
+		
+		while (start < end) {
+			int temp = arr[start];
+			arr[start] = arr[end];
+			arr[end] = temp;
+			start++;
+			end--;
+		}
+		
+		for (int i = 0; i < arr.length / 2; i++) {
+			int temp = arr[i];
+			arr[i] = arr[n - 1 - i];
+			arr[n - 1 - i] = temp;
+		}
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+ " ");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {1, 3, 5, 7, 9};
+		
+//		Output: 7 9 1 3 5
+		
+		int k = 2;
+		rotateElementByKth(arr, k);
+	}
+
+}
