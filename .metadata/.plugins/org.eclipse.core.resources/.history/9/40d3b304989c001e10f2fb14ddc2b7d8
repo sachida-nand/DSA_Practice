@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class PowerLessThenNum {
+	
+	public static void powerLessThenNum() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int num = scanner.nextInt();
+		
+		int largestPower = 1;
+		int secondLargest = 1;
+
+		
+		for (int i = 0; i < num; i++) {
+			
+			largestPower = (int)Math.pow(3, i);
+			
+			if(largestPower > num) {
+				break;
+			}
+			
+		}
+		while (largestPower <= num) {
+		}
+		
+		System.out.println("The largest power of 3 less than or equal to " + num + " is "+largestPower);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		powerLessThenNum();
+	}
+
+}

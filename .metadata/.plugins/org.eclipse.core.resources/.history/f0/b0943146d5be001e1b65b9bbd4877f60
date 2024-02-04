@@ -1,0 +1,16 @@
+
+public class TwoNumberWithGivenSum {
+	
+	public static void finTwoNumberWithGivenSum(int arr[], int sum) {
+		
+		int l =0;
+		int r = arr.length -1;
+		s
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

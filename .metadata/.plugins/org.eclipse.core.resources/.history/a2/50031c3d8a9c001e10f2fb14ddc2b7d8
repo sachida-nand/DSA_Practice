@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class GuessTheNumber {
+	
+	public static void guessTheNumber() {
+		Scanner scanner = new Scanner(System.in);
+		
+		int userGuess = 0;
+		int computerGuess =0;
+		
+		do {
+				computerGuess = (int)(Math.random() * 10) + 1;
+				System.out.print("User guess: ");
+				userGuess = scanner.nextInt();
+				
+				if(userGuess computerGuess)
+		}while()
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

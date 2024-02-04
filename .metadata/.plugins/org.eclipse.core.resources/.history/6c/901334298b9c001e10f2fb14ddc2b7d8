@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class GuessTheNumber {
+	
+	public static void guessTheNumber() {
+		Scanner scanner = new Scanner(System.in);
+		
+		int userGuess = 0;
+		int computerGuess =-1;
+		
+		do {
+				computerGuess = (int)(Math.random() * 10) + 1;
+				System.out.println("Computer guess: "+ computerGuess);
+				System.out.print("User guess: ");
+				userGuess = scanner.nextInt();
+				
+				if(userGuess > computerGuess) {
+					System.out.print("\n Too high, try again");
+				}else if (userGuess < computerGuess) {
+					System.out.print("\n Too Low, try again");
+				}else {
+					System.out.print("\n Good Guess");
+				}
+		}while(userGuess != computerGuess);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		guessTheNumber();
+	}
+
+}

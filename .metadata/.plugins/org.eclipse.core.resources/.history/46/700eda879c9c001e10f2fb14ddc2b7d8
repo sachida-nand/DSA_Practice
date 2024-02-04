@@ -1,0 +1,19 @@
+
+public class SumOfSquareNaturalNum {
+	
+	public static void () {
+		System.out.println("The sum of the squares of the first ten natural numbers is: ");
+		int sumOfSqOfEachNum = 0;
+		int sumOfSqOfWholeNum = 0;
+		for(int i=1; i<=10; i++) {
+			System.out.print(" "+i+"^2");
+			sumOfSqOfEachNum = sumOfSqOfEachNum + (i*i); 
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

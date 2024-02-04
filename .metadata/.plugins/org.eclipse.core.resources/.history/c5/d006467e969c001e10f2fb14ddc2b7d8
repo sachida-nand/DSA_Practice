@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class PowerLessThenNum {
+	
+	public static void powerLessThenNum() {
+		Scanner
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

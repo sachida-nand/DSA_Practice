@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class AnyValueToBaseToDecimal {
+	
+	public static void convertToAnyBase() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter a decimal value");
+		int decimal = scanner.nextInt();
+		
+		System.out.println("Enter a base value");
+		int base = scanner.nextInt();
+	
+		
+		StringBuilder result = new StringBuilder();
+
+        while (decimal > 0) {
+            int remainder = decimal % base;
+            
+            char digit = (char)('0'+ remainder);
+            
+            System.out.println('digot '+char);
+     
+            result.insert(0, digit); // Insert at the beginning of the string
+            decimal /= base;
+        }
+
+//        return ;
+		
+		System.out.println("Result is "+ result);
+		
+		scanner.close();
+	}
+
+	public static void main(String[] args) {
+		convertToAnyBase();
+	}
+
+}

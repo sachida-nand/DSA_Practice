@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class AnyValueToBaseToDecimal {
+	
+	public static int checkAndReturnIntValue(char num) {
+		int numberValue;
+		if(Character.getNumericValue(num) >= 0 && Character.getNumericValue(num) <=9) {
+			numberValue = Character.getNumericValue(num);
+		}else {
+			int capitalizeLatter = Character.toUpperCase(num);
+			numberValue = (int)(capitalizeLatter - 'A' + 10);
+		}
+		return numberValue;
+	}
+	
+	public static void convertToAnyBase() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter a decimal value");
+		String decimal = scanner.nextLine();
+		
+		int len = decimal.length();
+		
+		System.out.println("Enter a base value");
+		int base = scanner.nextInt();
+		
+		int result = 0;
+		
+		for (int i = 0; i < len; i++) {
+			int integerNumber = checkAndReturnIntValue(decimal.charAt(i));
+			result += integerNumber * Math.pow(base, len - i - 1);
+		}
+		
+		System.out.println("Result is "+ result);
+		
+	
+		scanner.close();
+	}
+
+	public static void main(String[] args) {
+		convertToAnyBase();
+	}
+
+}

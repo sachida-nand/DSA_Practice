@@ -1,0 +1,16 @@
+package PracticeQuestion;
+import java.util.Scanner;
+
+public class PracticeQuestion {
+	
+	public static void takeArrayLengthAndElementFromuser() {
+		System.out.println("Enter Length of the array: ");
+		Scanner sc = new Scanner(System.in);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

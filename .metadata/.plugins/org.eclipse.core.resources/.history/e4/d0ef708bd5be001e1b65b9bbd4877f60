@@ -1,0 +1,24 @@
+
+public class TwoNumberWithGivenSum {
+	
+	public static void finTwoNumberWithGivenSum(int arr[], int sum) {
+		
+		int l =0;
+		int r = arr.length -1;
+		int num1 = 0;
+		int num2 = 0;
+		
+		while (l < r) {
+			int sum = arr[l] + arr[r];
+			
+			if()
+			if(arr[i])
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

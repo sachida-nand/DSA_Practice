@@ -1,0 +1,31 @@
+
+public class TwoNumberWithGivenSum {
+	
+	public static void finTwoNumberWithGivenSum(int arr[], int sum) {
+		
+		int l =0;
+		int r = arr.length -1;
+		int num1 = 0;
+		int num2 = 0;
+		
+		while (l < r) {
+			int currentSum = arr[l] + arr[r];
+			
+			if(currentSum == sum) {
+				num1 = arr[l];
+				num2 = arr[r];
+			}else if(currentSum > sum ) {
+				r--;
+			}else {
+				l++;
+			}
+			if(arr[i])
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

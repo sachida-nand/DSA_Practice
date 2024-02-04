@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class SubAndProductOfEvenOdd {
+	
+	public static void sumAndProduct() {
+		Scanner scanner = 
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

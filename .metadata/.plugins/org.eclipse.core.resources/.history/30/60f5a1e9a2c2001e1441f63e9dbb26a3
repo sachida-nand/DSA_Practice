@@ -1,0 +1,21 @@
+
+public class RotateArrayByKElement {
+	
+	public static void rotateElementByKth(int arr[]) {
+		int n = arr.length;
+		int k = 2;
+		
+		int startIndex = n - k;
+		for (int i = ; i < arr.length; i++) {
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {1,2,3,4,5,6,7};
+		
+		rotateElementByKth(arr);
+	}
+
+}

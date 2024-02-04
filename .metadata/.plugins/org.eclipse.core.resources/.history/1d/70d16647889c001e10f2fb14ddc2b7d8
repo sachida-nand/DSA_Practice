@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class TablePrint {
+	
+	public static void tablePrint() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("");
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

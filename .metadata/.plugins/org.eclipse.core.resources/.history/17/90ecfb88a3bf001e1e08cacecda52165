@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class AnyValueToBaseToDecimal {
+	
+	public static char checkAndReturnIntValue(int num) {
+		char numberValue;
+		if(num >= 0 && num <=9) {
+			numberValue = (char) ('0' + num);
+		}else {
+			numberValue = (char)(('A' + (num - 10)));
+		}
+		return numberValue;
+	}
+	
+	public static void convertToAnyBase() {
+		
+	
+		
+		String result = "";
+
+        while (decimal > 0) {
+            int remainder = decimal % base;
+            
+            char digit = checkAndReturnIntValue(remainder);
+     
+            result = digit + result;
+            decimal /= base;
+        }
+		
+		System.out.println("Result is "+ result);
+		
+		scanner.close();
+	}
+
+	public static void main(String[] args) {
+		convertToAnyBase();
+	}
+
+}

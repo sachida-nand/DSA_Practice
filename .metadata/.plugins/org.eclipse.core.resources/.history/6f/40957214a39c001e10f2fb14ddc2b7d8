@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class PrintPattern {
+	
+	public static void printPattern() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a numer: ");
+		int row = scanner.nextInt();
+		
+		for(int i=)
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

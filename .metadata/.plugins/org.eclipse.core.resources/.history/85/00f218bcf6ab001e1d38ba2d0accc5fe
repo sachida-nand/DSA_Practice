@@ -1,0 +1,40 @@
+
+public class TrappingRainWater {
+	
+	public static void trapingRainWater(int arr[]) {
+		int n = arr.length;
+		int leftArray[] = new int[n];
+		int rightArray[] = new int[n];
+		
+		int rightMax = 0;
+		int leftMax = 0;
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] > leftMax) {
+				leftMax = arr[i];
+			}
+			leftArray[i] = leftMax;
+		}
+		
+		for (int i = arr.length - 1; i >= 0; i--) {
+			if(arr[i] > rightMax) {
+				rightMax = arr[i];
+			}
+			rightArray[i] = rightMax;
+		}
+		
+		for (int i = 0; i < rightArray.length; i++) {
+			System.out.println("Right Array");
+			System.out.println(leftArray[i]);
+			
+			
+			System.out.println("Right Array");
+		}
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

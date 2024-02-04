@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class CalculatePower {
+	
+	public static void CalculatePower() {
+		Scanner scanner = new Scanner(System.in);
+	
+		System.out.println("Enter the base");
+		int base = scanner.nextInt();
+		System.out.println("Enter the power");
+		int power = scanner.nextInt();
+		
+		for(int )
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

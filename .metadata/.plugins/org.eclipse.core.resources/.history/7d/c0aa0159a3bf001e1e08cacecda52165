@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class AnyValueToBaseToDecimal {
+	
+	public static char checkAndReturnIntValue(int num) {
+		char numberValue;
+		if(num >= 0 && num <=9) {
+			numberValue = (char) ('0' + num);
+		}else {
+			numberValue = (char)(('A' + (num - 10)));
+		}
+		return numberValue;
+	}
+	
+	public static void convertToAnyBase() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter a decimal value");
+		int decimal = scanner.nextInt();
+		
+		System.out.println("Enter a base value");
+		int base = scanner.nextInt();
+	
+		
+		String result = new StringBuilder();
+
+        while (decimal > 0) {
+            int remainder = decimal % base;
+            
+            char digit = checkAndReturnIntValue(remainder);
+     
+            result.append(digit);
+            decimal /= base;
+        }
+		
+		System.out.println("Result is "+ result);
+		
+		scanner.close();
+	}
+
+	public static void main(String[] args) {
+		convertToAnyBase();
+	}
+
+}

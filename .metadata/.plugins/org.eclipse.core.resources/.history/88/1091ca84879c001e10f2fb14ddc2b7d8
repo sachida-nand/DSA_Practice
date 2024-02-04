@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class CalculatePower {
+	
+	public static void CalculatePower() {
+		Scanner scanner = new Scanner(System.in);
+	
+		System.out.println("");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

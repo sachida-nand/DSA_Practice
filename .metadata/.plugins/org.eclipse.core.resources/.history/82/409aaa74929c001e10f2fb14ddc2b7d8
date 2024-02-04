@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class RemoveZero {
+	
+	public static void removeZeros() {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Enter an integer number: ");
+		int num = scanner.nextInt();
+		
+		int result = 0;
+		int digitCount = 1;
+		while (num > 0) {
+			int digit = num % 10;
+			
+			if(digit == 0) {
+				result = result + (digit*)
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

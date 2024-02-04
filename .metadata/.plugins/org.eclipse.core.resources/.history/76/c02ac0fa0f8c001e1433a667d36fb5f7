@@ -1,0 +1,14 @@
+package PracticeQuestion;
+
+public class PracticeQuestion {
+	
+	public static void takeL() {
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

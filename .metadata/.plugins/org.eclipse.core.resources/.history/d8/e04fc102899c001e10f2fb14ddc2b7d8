@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class GuessTheNumber {
+	
+	public static void guessTheNumber() {
+		Scanner scanner = new Scanner(System.in);
+		
+		do {
+			
+		}while()
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

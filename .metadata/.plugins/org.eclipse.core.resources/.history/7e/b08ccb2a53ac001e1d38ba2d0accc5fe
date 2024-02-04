@@ -1,0 +1,14 @@
+
+public class LongLengthOfAllconsecutive {
+	
+	public static void longestLength(int arr[]) {
+		
+		int len = 
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

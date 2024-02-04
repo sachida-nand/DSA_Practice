@@ -1,0 +1,20 @@
+package anotherExample;
+
+public class reverseDigits {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+	
+   public static int ReverceDigit(int digit) {
+	   int num = digit;
+	   
+	   if(num ==0) {
+		   
+	   }
+   }
+
+}

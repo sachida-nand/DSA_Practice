@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PowerLessThenNum {
+	
+	public static void powerLessThenNum() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int num = scanner.nextInt();
+		
+		int largestPower = 1;
+		
+		while () {
+			type type = (type) en.nextElement();
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

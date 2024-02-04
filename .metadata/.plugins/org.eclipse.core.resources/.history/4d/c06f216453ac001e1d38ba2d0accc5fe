@@ -1,0 +1,24 @@
+
+public class LongLengthOfAllconsecutive {
+	
+	public static void longestLength(int arr[]) {
+		
+		int len = 0;
+		
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] == 1) {
+				len +=1;
+			}else {
+				len = 0;
+			}
+		}
+		
+		System.out.println("Longest length: "+len);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

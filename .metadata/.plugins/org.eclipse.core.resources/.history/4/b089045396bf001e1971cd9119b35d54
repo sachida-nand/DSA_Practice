@@ -1,0 +1,73 @@
+import java.util.function.BinaryOperator;
+
+public class BitWiseRotate {
+	
+	public static void rotateRightBy2Bits(int array1[], int array1ay2[]) {
+		
+		System.out.println("Original array1ay: ");
+		
+		//print decimal number
+		for (int i = 0; i < array1.length; i++) {
+			System.out.print(array1[i]+ " ");
+		}
+		
+		System.out.println("\n\nOriginal array1ay showing 32 bit binary value: ");
+	
+		//print binary number 
+		for (int i = 0; i < array1.length; i++) {
+			System.out.print(String.format("%32s", Integer.toBinaryString(array1[i])).replace(' ', '0')+ " ");
+		}
+		
+		
+
+		int previousEle = array1[0]; // 10 // 11
+		
+		for (int i = 1; i < array1.length; i++) {
+			
+			int lastTwoBits = previousEle & 0b11;
+//			Binary value
+//			00000000000000000000000000000010
+//			10
+			
+			previousEle = array1[i];
+		
+			array1ay2[i] = array1[i] >> 2;
+			
+//			Binary value 
+//			000000000000000000000000000010
+
+			array1ay2[i] = (array1ay2[i]) | lastTwoBits << 30;	
+			
+//			Binary value 
+//			100000000000000000000000000010 == 11 
+		}
+		
+		int lastTwoBits = previousEle & 0b11;
+		
+		array1ay2[0] = array1[0] >> 2;
+		array1ay2[0] = (array1ay2[0]) | lastTwoBits << 30;
+	
+		System.out.println("\n\nAfter rotation array1ay showing 32 bit binary value: ");
+		
+		for (int i = 0; i < array1ay2.length; i++) {
+			System.out.print(String.format("%32s", Integer.toBinaryString(array1ay2[i])).replace(' ', '0')+ " ");
+		}
+		
+		System.out.println("\n\nAfter rotation array1ay: ");
+		for (int i = 0; i < array1ay2.length; i++) {
+			System.out.print(array1ay2[i]+ " ");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		int array1[] = {10, 11, 12, 13};
+		int array2[] = new int[array1.length];
+		
+			       //0   1   2   3
+		rotateRightBy2Bits(array1, array2);
+		
+	}
+	
+}

@@ -1,0 +1,15 @@
+
+public class TrappingRainWater {
+	
+	public static void trapingRainWater(int arr[]) {
+		int n = arr.length;
+		int leftArray[] = new int[n];
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

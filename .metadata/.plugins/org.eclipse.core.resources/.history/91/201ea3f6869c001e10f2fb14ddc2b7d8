@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class CheckPerfectNumber {
+	
+	public static void checkPerfecNum() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter number to check: ");
+		int num = scanner.nextInt();
+		
+		int sum = 0;
+		for(int i=1; i<num; i++) {
+			if(num%i == 0) {
+				sum += i;
+			}
+		}
+		
+		if(sum == num) {
+			System.out.println("\nNumber is perfect number");
+		}else {
+			System.out.println("\nNumber is not perfect number");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		checkPerfecNum();
+
+	}
+
+}
